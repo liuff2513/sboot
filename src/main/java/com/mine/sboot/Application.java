@@ -6,8 +6,11 @@ import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,14 +22,29 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @EnableAutoConfiguration(exclude = {SecurityAutoConfiguration.class}) //过滤不需要自动配置(exclude={DataSourceAutoConfiguration.class})
 @ComponentScan
+@EnableTransactionManagement
 //@ImportResource(xx) 引入xml配置设置
 //@SpringBootConfiguration // same as @Configuration @EnableAutoConfiguration @ComponentScan
-public class Application {
+public class Application extends SpringBootServletInitializer {
 
+    /**
+     * spring boot自带tomcat服务通过main函数启动服务
+     * @param args
+     */
     public static void main(String[] args) {
-        SpringApplication app = new SpringApplication(Application.class);
-        app.setBannerMode(Banner.Mode.OFF); //关闭启动横幅
-        app.run(args);
+        SpringApplication application = new SpringApplication(Application.class);
+        application.setBannerMode(Banner.Mode.OFF); //关闭启动横幅
+        application.run(args);
+    }
+
+    /**
+     * spring boot 外部tomcat服务启动配置
+     * @param builder
+     * @return
+     */
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+        return builder.sources(Application.class);
     }
 
     @Value("${my.secret}")
