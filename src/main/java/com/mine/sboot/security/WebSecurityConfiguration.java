@@ -201,7 +201,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
     public void configure(WebSecurity web) throws Exception {
         //设置不拦截规则
         web.ignoring().antMatchers("/**/*.js", "/**/*.css",
-                "/home","/hello","/verify","/welcome",
+                "/home","/hello","/verify","/welcome","/loginBefore","/loginError",
                 "/**/*.ftl",
                 "/**/*.ico",
                 "/**/*.css",
