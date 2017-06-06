@@ -1,0 +1,430 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<title>主页</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link href="css/bootstrap.min.css?v=3.4.0" rel="stylesheet">
+<link href="font-awesome/css/font-awesome.css?v=4.3.0" rel="stylesheet">
+<!-- Morris -->
+<link href="css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+<!-- Gritter -->
+<!--<link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">-->
+<!--<link href="css/animate.css" rel="stylesheet">-->
+<link href="css/style.css?v=3.0.0" rel="stylesheet">
+</head>
+<body>
+	<div id="wrapper">
+		<nav class="navbar-default navbar-static-side" role="navigation">
+			<div class="sidebar-collapse">
+				<ul class="nav" id="side-menu">
+					<li class="nav-header">
+						<div class="dropdown profile-element">
+							<img src="img/logo.png"> <a>登录</a>| <a>注册账户</a>
+						</div>
+						<div class="logo-element">
+							<img src="img/logo_element.png"> <a>登录</a> <br> <a>注册</a>
+						</div>
+					</li>
+					<li class="active"><a href="index.html" onfocus="this.blur();"><i
+							class="fa navhome"></i> <span class="nav-label">主页</span> <span
+							class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="index_1.html">主页示例一</a></li>
+							<li><a href="index_2.html">主页示例二</a></li>
+							<li><a href="index_3.html">主页示例三</a></li>
+							<li><a href="index_4.html">主页示例四</a></li>
+						</ul></li>
+					<li><a href="index.html#" onfocus="this.blur();"><i
+							class="fa navsliders"></i> <span class="nav-label">市场活动</span><span
+							class="arrow fa"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="toastr_notifications.html">Toastr通知</a></li>
+							<li><a href="nestable_list.html">嵌套列表</a></li>
+							<li><a href="timeline_v2.html">时间轴</a></li>
+							<li><a href="forum_main.html">论坛</a></li>
+							<li><a href="code_editor.html">代码编辑器</a></li>
+							<li><a href="modal_window.html">模态窗口</a></li>
+							<li><a href="validation.html">表单验证</a></li>
+							<li><a href="tree_view_v2.html">树形视图</a></li>
+							<li><a href="chat_view.html">聊天窗口</a></li>
+						</ul></li>
+					<li><a href="index.html#" onfocus="this.blur();"><i
+							class="fa navusers"></i> <span class="nav-label">客户管理</span><span
+							class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="graph_echarts.html">客户池</a></li>
+							<li><a href="graph_flot.html">潜在客户</a></li>
+							<li><a href="graph_morris.html">成交客户</a></li>
+							<li><a href="graph_rickshaw.html">联系人</a></li>
+						</ul></li>
+					<li><a href="mailbox.html" onfocus="this.blur();"><i
+							class="fa navchart"></i> <span class="nav-label">销售过程管理</span><span
+							class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="mailbox.html">收件箱</a></li>
+							<li><a href="mail_detail.html">查看邮件</a></li>
+							<li><a href="mail_compose.html">写信</a></li>
+						</ul></li>
+					<li><a href="index.html#" onfocus="this.blur();"><i
+							class="fa navcalendar"></i> <span class="nav-label">服务与支持管理</span><span
+							class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="form_basic.html">基本表单</a></li>
+							<li><a href="form_validate.html">表单验证</a></li>
+							<li><a href="form_advanced.html">高级插件</a></li>
+							<li><a href="form_wizard.html">步骤条</a></li>
+							<li><a href="form_webuploader.html">百度WebUploader</a></li>
+							<li><a href="form_file_upload.html">文件上传</a></li>
+							<li><a href="form_editors.html">富文本编辑器</a></li>
+							<li><a href="form_simditor.html">simditor</a></li>
+							<li><a href="form_avatar.html">头像裁剪上传</a></li>
+							<li><a href="layerdate.html">日期选择器layerDate</a></li>
+						</ul></li>
+					<li><a href="index.html#" onfocus="this.blur();"><i
+							class="fa  navpaste"></i> <span class="nav-label">辅助管理</span><span
+							class="fa arrow"></span></a>
+						<ul class="nav nav-second-level">
+							<li><a href="contacts.html">联系人</a></li>
+							<li><a href="profile.html">个人资料</a></li>
+							<li><a href="projects.html">项目</a></li>
+							<li><a href="project_detail.html">项目详情</a></li>
+							<li><a href="file_manager.html">文件管理器</a></li>
+							<li><a href="calendar.html">日历</a></li>
+							<li><a href="faq.html">帮助中心</a></li>
+							<li><a href="timeline.html">时间轴</a></li>
+							<li><a href="pin_board.html">标签墙</a></li>
+							<li><a href="invoice.html">单据</a></li>
+							<li><a href="login.html">登录</a></li>
+							<li><a href="register.html">注册</a></li>
+						</ul></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="gray-bg dashbard-1" id="page-wrapper">
+			<div class="row border-bottom">
+				<nav class="navbar navbar-static-top" role="navigation"
+					style="margin-bottom: 0">
+					<div class="navbar-header">
+						<a class="minimalize-styl-2 navbar-minimalize" href="index.html#"
+							onfocus="this.blur();"><i class="fa fa-2x fa-bars"></i> </a>
+						<form role="search" class="navbar-form-custom" method="post"
+							action="search_results.html">
+							<div class="form-group has-feedback">
+								<input type="text" placeholder="请输入搜索关键词…" class="form-control"
+									name="top-search" id="top-search"> <span class="dback">
+									<a class="btn-search" type="submit"><i
+										class="fa fa-lg fa-search"></i></a>
+								</span>
+							</div>
+						</form>
+					</div>
+					<ul class="nav navbar-top-links navbar-right m-t-md">
+						<li class="dropdown"><a href="index.html" title="添加"><i
+								class="fa fa-2x fa-plus text-inverse"></i><i
+								class="fa fa-angle-down text-inverse"></i></a></li>
+						<li class="dropdown"><a class="dropdown-toggle count-info"
+							data-toggle="dropdown" href="index.html#"> <i
+								class="fa fa-2x fa-bell text-inverse"></i> <span
+								class="label label-warning">16</span>
+
+						</a>
+							<ul class="dropdown-menu dropdown-messages">
+								<li>
+									<div class="dropdown-messages-box">
+										<a href="profile.html" class="pull-left"> <img alt="image"
+											class="img-circle" src="img/a7.jpg">
+
+										</a>
+										<div class="media-body">
+											<small class="pull-right">46小时前</small> <strong>小四</strong>项目已处理完结
+											<br> <small class="text-muted">3天前 2014.11.8</small>
+										</div>
+									</div>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<div class="dropdown-messages-box">
+										<a href="profile.html" class="pull-left"> <img alt="image"
+											class="img-circle" src="img/a4.jpg">
+
+										</a>
+										<div class="media-body ">
+											<small class="pull-right text-navy">25小时前</small> <strong>国民岳父</strong>这是一条测试信息
+											<br> <small class="text-muted">昨天</small>
+										</div>
+									</div>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<div class="text-center link-block">
+										<a href="mailbox.html"> <i class="fa fa-envelope"></i> <strong>
+												查看所有消息</strong>
+
+										</a>
+									</div>
+								</li>
+							</ul></li>
+						<li class="dropdown"><a class="dropdown-toggle count-info"
+							data-toggle="dropdown" href="index.html#"> <i
+								class="fa fa-2x fa-volume-down"></i> <span
+								class="label label-primary">8</span>
+
+						</a>
+							<ul class="dropdown-menu dropdown-alerts">
+								<li><a href="mailbox.html">
+
+										<div>
+
+											<i class="fa fa-envelope fa-fw"></i> 您有16条未读消息 <span
+												class="pull-right text-muted small">4分钟前</span>
+
+										</div>
+
+								</a></li>
+								<li class="divider"></li>
+								<li><a href="profile.html">
+
+										<div>
+
+											<i class="fa fa-qq fa-fw"></i> 3条新回复 <span
+												class="pull-right text-muted small">12分钟钱</span>
+
+										</div>
+
+								</a></li>
+								<li class="divider"></li>
+								<li>
+									<div class="text-center link-block">
+										<a href="notifications.html"> <strong>查看所有 </strong> <i
+											class="fa fa-angle-right"></i>
+
+										</a>
+									</div>
+								</li>
+							</ul></li>
+						<li class="dropdown"><a href="index.html#"
+							class="dropdown-toggle count-info" data-toggle="dropdown"> <i
+								class="fa fa-2x fa-calendar"></i> <span
+								class="label label-success">8</span>
+
+						</a>
+							<ul class="dropdown-menu dropdown-alerts">
+								<li><a href="mailbox.html">
+
+										<div>
+
+											<i class="fa fa-envelope fa-fw"></i> 您有16条未读消息 <span
+												class="pull-right text-muted small">4分钟前</span>
+
+										</div>
+
+								</a></li>
+								<li class="divider"></li>
+								<li><a href="profile.html">
+
+										<div>
+
+											<i class="fa fa-qq fa-fw"></i> 3条新回复 <span
+												class="pull-right text-muted small">12分钟钱</span>
+
+										</div>
+
+								</a></li>
+								<li class="divider"></li>
+								<li>
+									<div class="text-center link-block">
+										<a href="notifications.html"> <strong>查看所有 </strong> <i
+											class="fa fa-angle-right"></i>
+
+										</a>
+									</div>
+								</li>
+							</ul></li>
+						<li class="dropdown"><a class="dropdown-toggle count-info"
+							data-toggle="dropdown" href="index.html#"> <i
+								class="fa fa-2x fa-question"></i> <span class="label label-info">8</span>
+
+						</a>
+							<ul class="dropdown-menu dropdown-alerts">
+								<li><a href="mailbox.html">
+
+										<div>
+
+											<i class="fa fa-envelope fa-fw"></i> 您有16条未读消息 <span
+												class="pull-right text-muted small">4分钟前</span>
+
+										</div>
+
+								</a></li>
+								<li class="divider"></li>
+								<li><a href="profile.html">
+
+										<div>
+
+											<i class="fa fa-qq fa-fw"></i> 3条新回复 <span
+												class="pull-right text-muted small">12分钟钱</span>
+
+										</div>
+
+								</a></li>
+								<li class="divider"></li>
+								<li>
+									<div class="text-center link-block">
+										<a href="notifications.html"> <strong>查看所有 </strong> <i
+											class="fa fa-angle-right"></i>
+
+										</a>
+									</div>
+								</li>
+							</ul></li>
+						<li><a href="login.html"> <i class="fa fa-2x fa-cog"></i>
+
+						</a></li>
+						<li><a href="login.html"> <img class="img-circle"
+								src="img/profile_small.jpg" alt="image"> MIKE<i
+								class="fa fa-angle-down"></i>
+						</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="panel blank-panel">
+				<div class="panel-heading">
+					<div class="panel-options khc-tab">
+						<h1>客户池</h1>
+						<ul class="khc-tab-menu nav nav-tabs">
+							<li style="border-right: 1px solid #d9d9d9;" class="active">
+								<a data-toggle="tab" href="tabs_panels.html#tab-1"
+								onfocus="this.blur();">公有池</a>
+							</li>
+							<li class=""><a data-toggle="tab"
+								href="tabs_panels.html#tab-2" onfocus="this.blur();">私有池</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="panel-body">
+					<div class="tab-content bo-l-r">
+						<div id="tab-1" class="tab-pane active">
+							<div class="ibox float-e-margins">
+								<div class="ibox-title">
+									<div class="col-sm-2 m-b-xs">
+										<select class="input-sm form-control input-s-sm inline">
+											<option value="0">--所有客户--</option>
+											<option value="1">选项1</option>
+											<option value="2">选项2</option>
+											<option value="3">选项3</option>
+										</select>
+									</div>
+									<div class="khc-bianji">
+										<a>编辑</a> <a>删除</a> <a>复制</a> <a>新添</a>
+									</div>
+									<div class="ibox-tools">
+										<a class="collapse-link"> <i class="fa fa-chevron-up"></i>
+										</a> <a class="dropdown-toggle" data-toggle="dropdown"
+											href="table_basic.html#"> <i class="fa fa-wrench"></i>
+										</a>
+										<ul class="dropdown-menu dropdown-user">
+											<li><a href="table_basic.html#">选项1</a></li>
+											<li><a href="table_basic.html#">选项2</a></li>
+										</ul>
+										<a class="close-link"> <i class="fa fa-times"></i>
+										</a>
+									</div>
+								</div>
+								<div class="ibox-content">
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th>顺序 <i class="fa fa-angle-down"></i>
+												</th>
+												<th>公司 <i class="fa fa-angle-down"></i>
+												</th>
+												<th>联系人 <i class="fa fa-angle-down"></i>
+												</th>
+												<th>手机 <i class="fa fa-angle-down"></i>
+												</th>
+												<th>固话 <i class="fa fa-angle-down"></i>
+												</th>
+												<th>邮箱 <i class="fa fa-angle-down"></i>
+												</th>
+												<th>客户状态 <i class="fa fa-angle-down"></i>
+												</th>
+												<th>修改者 <i class="fa fa-angle-down"></i>
+												</th>
+												<th>修改时间 <i class="fa fa-angle-down"></i>
+												</th>
+												<th><i class="fa fa-search"></i> <a>隐藏</a></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>张三</td>
+												<td>男</td>
+												<td>23</td>
+												<td>张三</td>
+												<td>男</td>
+												<td>23</td>
+												<td>张三</td>
+												<td>男</td>
+												<td>23</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>李四</td>
+												<td>男</td>
+												<td>27</td>
+												<td>张三</td>
+												<td>男</td>
+												<td>23</td>
+												<td>张三</td>
+												<td>男</td>
+												<td>23</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>王麻子</td>
+												<td>男</td>
+												<td>65</td>
+												<td>张三</td>
+												<td>男</td>
+												<td>23</td>
+												<td>张三</td>
+												<td>男</td>
+												<td>23</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div id="tab-2" class="tab-pane">
+							<strong>移动设备优先</strong>
+							<p>在 Bootstrap 2 中，我们对框架中的某些关键部分增加了对移动设备友好的样式。而在 Bootstrap 3
+								中，我们重写了整个框架，使其一开始就是对移动设备友好的。这次不是简单的增加一些可选的针对移动设备的样式，而是直接融合进了框架的内核中。也就是说，Bootstrap
+								是移动设备优先的。针对移动设备的样式融合进了框架的每个角落，而不是增加一个额外的文件。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Mainly scripts -->
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js?v=3.4.0"></script>
+	<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+	<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<!-- Custom and plugin javascript -->
+	<script src="js/hplus.js?v=2.2.0"></script>
+	<script src="js/plugins/pace/pace.min.js"></script>
+	<!-- 
+	<script src="http://tajs.qq.com/stats?sId=9051096"
+	 -->
+		type="text/javascript" charset="UTF-8"></script>
+	<!--统计代码，可删除-->
+
+
+</body>
+</html>

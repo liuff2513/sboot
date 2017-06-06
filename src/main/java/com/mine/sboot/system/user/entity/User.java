@@ -1,7 +1,7 @@
 package com.mine.sboot.system.user.entity;
 
 import com.mine.sboot.core.jpa.entity.IdJpaEntity;
-import com.mine.sboot.system.role.Role;
+import com.mine.sboot.system.role.entity.Role;
 
 import javax.persistence.*;
 import java.io.Serializable;

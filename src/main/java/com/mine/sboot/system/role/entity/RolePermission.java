@@ -1,4 +1,4 @@
-package com.mine.sboot.system.role;
+package com.mine.sboot.system.role.entity;
 
 import com.mine.sboot.core.jpa.entity.IdJpaEntity;
 

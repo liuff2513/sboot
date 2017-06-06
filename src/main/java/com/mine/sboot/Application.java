@@ -5,7 +5,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration;
 import org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration;
+import org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
@@ -20,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by liuff on 2017/6/4 18:56.
  */
 @RestController
-@EnableAutoConfiguration(exclude = {SecurityAutoConfiguration.class}) //过滤不需要自动配置(exclude={DataSourceAutoConfiguration.class})
+@EnableAutoConfiguration(exclude = {SecurityAutoConfiguration.class, FreeMarkerAutoConfiguration.class, WebMvcAutoConfiguration.class}) //过滤不需要自动配置(exclude={DataSourceAutoConfiguration.class})
 @ComponentScan
 @EnableTransactionManagement
 //@ImportResource(xx) 引入xml配置设置
