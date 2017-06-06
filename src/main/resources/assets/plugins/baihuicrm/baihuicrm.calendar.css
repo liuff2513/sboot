@@ -1,0 +1,131 @@
+@CHARSET "UTF-8";
+.simpletr td {
+	padding: 5px 0px 10px !important;position: relative;
+	/*border: none!important;*/
+}
+
+.simpletd a {
+	cursor: pointer;
+	font-weight: bold;
+	height: 26px;
+	line-height: 26px;
+}
+
+.simpletd:not(.seltd) a:HOVER {
+	background: #EFEFEF;
+	color: #AAA; 
+}
+
+.seltd a {
+	background: #7B7B7B !important;
+	color: #FFF;
+	border-bottom: none!important;
+	/* -webkit-animation:bounceIn 1s .2s ease both;
+	-moz-animation:bounceIn 1s .2s ease both;}
+	@-webkit-keyframes bounceIn{
+	0%{opacity:0;
+	-webkit-transform:scale(.3)}
+	50%{opacity:1;
+	-webkit-transform:scale(1.05)}
+	70%{-webkit-transform:scale(.9)}
+	100%{-webkit-transform:scale(1)}
+	}
+	@-moz-keyframes bounceIn{
+	0%{opacity:0;
+	-moz-transform:scale(.3)}
+	50%{opacity:1;
+	-moz-transform:scale(1.05)}
+	70%{-moz-transform:scale(.9)}
+	100%{-moz-transform:scale(1)} */
+	
+}
+
+.samedaytd a {
+	border: 1px solid #AAA!important;
+	/* -webkit-animation:bounceIn 1s .2s ease both;
+	-moz-animation:bounceIn 1s .2s ease both;}
+	@-webkit-keyframes bounceIn{
+	0%{opacity:0;
+	-webkit-transform:scale(.3)}
+	50%{opacity:1;
+	-webkit-transform:scale(1.05)}
+	70%{-webkit-transform:scale(.9)}
+	100%{-webkit-transform:scale(1)}
+	}
+	@-moz-keyframes bounceIn{
+	0%{opacity:0;
+	-moz-transform:scale(.3)}
+	50%{opacity:1;
+	-moz-transform:scale(1.05)}
+	70%{-moz-transform:scale(.9)}
+	100%{-moz-transform:scale(1)} */
+}
+
+.seltd a, .samedaytd a, .schedule-none a,
+	.schedule-done a, .schedule-undone  a, .schedule-notice a,
+	.schedule-warn a,.simpletd:not(.seltd) a:HOVER {
+	display: block;
+	position: relative;
+	height: 26px;
+	line-height: 26px;
+	width: 26px;
+	left: 50%;
+	margin-left: -13px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	font-weight: bold;
+}
+
+.schedule-none a {
+	background: #00BB00;
+	color: #FFF;
+}
+
+.schedule-done a {
+	/* background: #006000; */
+	background: #00BB00;
+	color: #FFF;
+}
+
+.schedule-undone a {
+	background: #CE0000;
+	color: #FFF;
+}
+
+.schedule-notice a {
+	/*border-bottom: 10px solid #EAC100;
+	border-top: 1px solid #AAA;*/
+}
+
+.schedule-warn a {
+	/*border-bottom: 15px solid #FF5809;
+	border-top: 1px solid #AAA;*/
+}
+/*<i class="simpletd-box-active"></i>*/
+.schedule-notice .simpletd-box-active {
+	background: #EAC100 none repeat scroll 0 0;
+	border: medium none;
+	border-radius: 50%;
+	bottom: 1px;
+	display: block;
+	height: 8px;
+	left: 50%;
+	margin-left: -5px;
+	position: absolute;
+	width: 8px;
+	z-index: 999;
+}
+.schedule-warn .simpletd-box-active {
+	background: #FF5809 none repeat scroll 0 0;
+	border: medium none;
+	border-radius: 50%;
+	bottom: 1px;
+	display: block;
+	height: 8px;
+	left: 50%;
+	margin-left: -5px;
+	position: absolute;
+	width: 8px;
+	z-index: 999;
+}

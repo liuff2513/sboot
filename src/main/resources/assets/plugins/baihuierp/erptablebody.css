@@ -1,0 +1,119 @@
+#erptablebody thead tr, #erptablebody tfoot tr{ 
+	display:block; 
+} 
+#erptablebody th {
+	/*width:auto;详情页宽度用auto 表格不能被占满 xie 17/4/14*/
+	width: 6%;
+} 
+#erptablebody td {
+	/*width:auto;详情页宽度用auto 表格不能被占满 xie 17/4/14*/
+	width: 6%;
+	padding:0;
+} 
+#erptablebody tbody{
+	display: block;
+	max-height: 335px; 
+	with: 100%;
+	overflow: auto;
+}
+#erptablebody tbody tr {
+	display:block;
+	width:100%;
+}
+#erptablebody tbody tr td, #erptablebody thead tr td {
+	padding-top: 5px!important;
+	padding-right: 5px!important;
+	padding-bottom: 5px!important;
+	padding-left: 5px!important;
+	position: relative;
+}
+#erptablebody tbody tr td:FIRST-CHILD {
+	padding-left: 22px!important;
+	text-align: left;
+}
+
+#erptablebody .lookSpan {
+	position: absolute;
+	padding: 2px 3px;
+	margin-left: -18px;
+	cursor: pointer;
+}
+#erptablebody .insertSpan {
+	position: absolute;
+	padding: 2px 3px;
+	margin-left: -13px;
+	cursor: pointer;
+}
+
+#erptablebody .delSpan {
+	position: absolute;
+	/*left: 2px;*/
+	margin-top: -19px;
+	margin-left: -20px;
+	cursor: pointer;
+}
+
+#product_div .modal-dialog {
+	width: 80%!important;
+	max-height: 80%;
+	overflow-y: auto;
+	margin-top:5%!important;
+	margin-bottom:0px!important;
+	padding-top:0px!important;
+	padding-bottom:0px!important;
+}
+#product_div .modal-dialo div {
+	margin-top:0px!important;
+	margin-bottom:0px!important;
+	padding-top:0px!important;
+	padding-bottom:0px!important;
+}
+#product_div .wrapper-content-indexsetup {
+	padding: 0px!important;
+}
+#product_div .report-form-box {
+	min-height: 400px!important;
+}
+/*.fixedThead {
+    display: block;
+}
+
+.scrollTbody {
+    display: block;
+    height: 262px;
+    overflow: auto;
+    width: 100%;
+}
+
+.table td, .table th {
+    width: 250px;
+    border-bottom: none;
+    border-left: none;
+    border-right: 1px solid #CCC;
+    border-top: 1px solid #DDD;
+    word-break: keep-all;
+    white-space: nowrap;
+}*/
+/*xie 17/4/14 tbody纵向滚动条超宽出现横向滚动条 谷歌不明显*/
+#erptablebody .scrollTbody tr td:last-child input{
+	margin-right: 6px;
+}
+#erptablebody .scrollTbody tr td:last-child select{
+	margin-right: 6px;
+}
+#erptablebody .scrollTbody{
+	overflow-x: hidden;
+}
+/*xie 17/4/14 tbody纵向滚动条超宽出现横向滚动条 火狐明显*/
+@-moz-document url-prefix(){
+
+	#erptablebody .scrollTbody tr td:last-child input{
+		margin-right: 16px;
+	}
+	#erptablebody .scrollTbody tr td:last-child select{
+		margin-right: 16px;
+	}
+	#erptablebody .scrollTbody{
+		overflow-x: hidden;
+	}
+}
