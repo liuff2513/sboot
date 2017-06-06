@@ -1,0 +1,175 @@
+ul,ol{
+    padding:0;
+    margin:0;
+}
+ul,ol li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.setCurBox{
+    position: relative;
+    height: 105px;
+}
+.setCurrency{
+    position: absolute;
+    left: 20px;
+    top:25px;
+    font-size: 14px;
+}
+.setCurrency li{
+    position: relative;
+    padding-left: 18px;
+}
+.setCurrency li:before{
+    content: '';
+    position: absolute;
+    left: 3px;
+    top:6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background: #ccc;
+}
+.setCurrency .setCurFirst{
+    margin-bottom: 15px;
+}
+.setCurrency .setCurFirst:before{
+    top:13px;
+}
+.setCurrency .innerCont{
+    display: inline-block;
+    background: #f7f7f7;
+    padding:4px 10px;
+    border:1px solid #ebebeb;
+    font-size: 12px;
+    margin-left: 18px;
+}
+.setCurrency .innerCont input{
+    height: 26px;
+    border:1px solid #ebebeb;
+    outline:none;
+}
+.setCurrency .innerCont .currencyMark{
+    margin-right: 45px;
+}
+.setCurrency .innerCont a{
+    margin:0 10px 0 28px;
+    color: #4f8ed4;
+}
+.acomIconBox{
+    position: absolute;
+    right: 20px;
+    bottom:0;
+}
+.acomIconBox a{
+    float: left;
+    width: 35px;
+    height: 30px;
+    margin-left: 15px;
+}
+.acomIcon1{
+     background: url("../../theme/img/accommdate/g01.png") no-repeat center;
+ }
+.acomIcon2{
+    background: url("../../theme/img/accommdate/g02.png") no-repeat center;
+}
+.acomIcon3{
+    background: url("../../theme/img/accommdate/g03.png") no-repeat center;
+}
+.acomIcon4{
+    background: url("../../theme/img/accommdate/g04.png") no-repeat center;
+}
+.acomIcon5{
+    background: url("../../theme/img/accommdate/g05.png") no-repeat center;
+}
+.acomIcon6{
+    background: url("../../theme/img/accommdate/g06.png") no-repeat center;
+}
+.acomIcon7{
+    background: url("../../theme/img/accommdate/g07.png") no-repeat center;
+}
+.acomIcon8{
+    background: url("../../theme/img/accommdate/g08.png") no-repeat center;
+}
+.acomIcon9{
+    background: url("../../theme/img/accommdate/g09.png") no-repeat center;
+}
+.wrapper.currencyWrapper{
+    min-width: 645px;
+}
+.wrapper.currencyWrapper .dataTables_scroll{
+    padding-top: 0px;
+    height: calc(100% - 70px);
+}
+.form-layout-two.newly-two .ibox-content .exchangeRateTable tr td input{
+    width: calc(100% - 10px);
+    padding:0 3px !important;
+    height: 26px;
+    margin:0 5px;
+    border:1px solid #7a7a7a;
+}
+.form-layout-two.newly-two .ibox-content .exchangeRateTable .exchangeFirstTr td,.form-layout-two.newly-two .ibox-content .exchangeRateTable .exchangeFirstTr th{
+    padding-top: 10px;
+    padding-bottom: 2px;
+}
+.form-layout-two.newly-two .ibox-content .exchangeRateTable .exchangeSecondTr td,.form-layout-two.newly-two .ibox-content .exchangeRateTable .exchangeSecondTr th{
+    padding-top: 2px;
+    padding-bottom: 10px;
+}
+.form-layout-two.newly-two .ibox-content .exchangeRateTable thead{
+    border:1px solid #999;
+}
+.form-layout-two.newly-two .ibox-content .exchangeRateTable thead th{
+    border-bottom:1px solid #999;
+    background: #e4e4e4;
+}
+.form-layout-two.newly-two .ibox-content .exchangeRateTable tbody{
+    background: #f2f2f2;
+    border:1px solid #ccc;
+}
+.form-layout-two.newly-two .ibox-content .exchangeRateTable tbody td{
+    border:none;
+}
+.form-layout-two.newly-two .ibox-content .exchangeRateTable tbody th{
+    border:none;
+}
+.form-layout-two.newly-two .ibox-content .floatExchangeRateTable tr th{
+    width: 7%;
+}
+.form-layout-two.newly-two .ibox-content .floatExchangeRateTable tr td{
+    width: 7.7%;
+}
+.newSelectType::after{
+    top:0;
+}
+.form-layout-two .ibox-content input{
+    margin-bottom:0;
+}
+.form-layout-two .newSelectType select{
+    margin-bottom: 0;
+}
+.wrapper .subNavBox{
+    padding: 0 15px 40px;
+}
+.form-layout-two .ibox-title{
+    padding:0;
+}
+.iboxExchange{
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+.currencyWrapper .form-left{
+    min-width: 670px;
+}
+/*17/4/25 xie 币种页面调整*/
+#currency_content{
+    height: calc(100% - 70px);
+}
+.panel-heading-part{
+    background: #fff;
+    padding:15px 10px 0;
+}

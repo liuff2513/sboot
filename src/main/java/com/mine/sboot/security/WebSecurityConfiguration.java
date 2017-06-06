@@ -12,6 +12,7 @@ import org.springframework.security.access.AccessDecisionVoter;
 import org.springframework.security.access.vote.AffirmativeBased;
 import org.springframework.security.access.vote.AuthenticatedVoter;
 import org.springframework.security.access.vote.RoleVoter;
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
@@ -139,6 +140,12 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
         return webSecurityExpressionHandler;
     }
 
+    @Bean
+    @Override
+    public AuthenticationManager authenticationManagerBean() throws Exception {
+        return super.authenticationManagerBean();
+    }
+
     /**
      * UserDetailsService 加密认证配置
      * @param auth
@@ -150,7 +157,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
     }
 
     /**
-     * 表單登陸認證
+     * 表单登录认证
      * @param http
      * @throws Exception
      */
@@ -185,7 +192,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .invalidSessionUrl("/viewLogin")
                 .maximumSessions(50)
                 .expiredUrl("/expire.ftl");
-        http.csrf().disable();
+//        http.csrf().disable();
         http.headers().cacheControl().disable().frameOptions().sameOrigin();
         http.authorizeRequests().accessDecisionManager(accessDecisionManager()).expressionHandler(webSecurityExpressionHandler());
     }

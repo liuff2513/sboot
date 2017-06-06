@@ -1,0 +1,592 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ul,ol{
+    padding: 0;
+    margin:0;
+}
+ul,ol li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.documentContainer{
+    width: 100%;
+    height: 100%;
+    border:1px solid #ccc;
+    min-height: 678px;
+    /*overflow: hidden;*/
+}
+.doc-tab-content{
+    overflow: visible;
+    /*min-width: 900px;*/
+}
+.documentContainer .documentManageLeft{
+    width: 195px;
+    height: 100%;
+    float: left;
+    padding:15px 0 15px 0;
+    /*margin-bottom: -600px;*/
+    position: relative;
+    z-index: 2;
+}
+.documentContainer .documentManageRight{
+    width: calc(100% - 195px);
+    float: left;
+    height: 100%;
+    min-height: 674px;
+    padding:25px 25px 1px 25px;
+    border-left: 1px solid #ccc;
+    /*margin-bottom: -600px;*/
+}
+.DomLeftTop{
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+.DomLeftTop input[type='file']{
+    width: 100%;
+    height: 27px;
+    position: absolute;
+   /* z-index: 1;
+    opacity: 0;*/
+}
+.DomLeftTop .choiceFile{
+    background: #2b85c4;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: normal;
+    border-radius: 3px;
+    user-select: none;
+}
+.DomLeftBottom h4{
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    margin: 0;
+    font-weight: normal;
+}
+.DomLeftBottom .liActive{
+    background: #ebebeb;
+}
+.DomLeftBottom i{
+    font-size: 18px;
+}
+.fileLists li i,.createAllFile h4 i{
+    padding:0 8px 0 20px;
+}
+.DomLeftBottom .fileLists{
+    margin-top: 9px;
+}
+.DomLeftBottom .fileLists li{
+    height: 30px;
+    line-height: 30px;
+}
+.DomLeftBottom .fa-folder-open{
+    color: #f4ac08;
+}
+.DomLeftBottom .fa-file-text-o{
+    color: #46c6f3;
+}
+.DomLeftBottom .fa-image{
+    color: #f4ac08;
+}
+.DomLeftBottom .fa-music{
+    color: #2fc57d;
+}
+.DomLeftBottom .fa-youtube-play{
+    color: #2ec0f3;
+}
+.DomLeftBottom .fa-star{
+    color: #f45e4f;
+}
+.createAllFile{
+    margin-top: 0;
+}
+.createFileItem{
+    /*margin-top: 20px;*/
+    /*overflow: hidden;*/
+    padding-bottom: 10px;
+}
+.clears:after{
+    content: '';
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+.createFileItem li{
+    line-height: 30px;
+}
+.createFileItem .mineFile{
+    display: inline-block;
+    background: url("../img/file_03.png") no-repeat center center;
+    margin-right: 3px;
+}
+.createFileItem .firstLevel{
+    padding-left: 20px;
+}
+.createFileItem .secondLevel{
+    padding-left: 48px;
+}
+/*
+.createFileItem .Fright{
+    margin-right:5px;
+    font-size: 15px;
+    margin-top: 8px;
+    float: right;
+    cursor: pointer;
+}
+.createFileItem .Fleft{
+    font-size: 14px;
+    margin-right: 8px;
+}
+.createFileItem li{
+    position: relative;
+}
+.toolWrap{
+    position: absolute;
+    right: 15px;
+    transform: translateX(90%);
+    top: 0;
+}
+.toolWrap:hover .secondLevelTools{
+    display: block;
+    z-index: 10;
+    left: 3px;
+}
+.toolWrap:hover{
+    right: 2px;
+}
+
+.toolWrap .Fright{
+    float: left;
+    position: relative;
+    left: 0;
+}
+.secondLevelTools{
+    float: right;
+    margin-top: 2px;
+    padding: 0 15px;
+    background: #fff;
+    border: 1px solid #ccc;
+    position: relative;
+    display: none;
+}
+.secondLevelTools:before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    left: -5px;
+    top: 9px;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.secondLevelTools li{
+    padding-left: 22px;
+    cursor: pointer;
+}
+*/
+@-moz-document url-prefix() {
+    .createFileItem .Fright {
+        padding-right: 5px;
+        font-size: 15px;
+        margin-top: 8px;
+        float: right;
+        cursor: pointer;
+    }
+    /*火狐下文档管理文件夹图标的位置*/
+}
+.createFileItem .Fright {
+    margin-right: 13px;
+    font-size: 15px;
+    margin-top: 8px;
+    float: right;
+    cursor: pointer;
+}
+
+.createFileItem .Fleft {
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.createFileItem ul>li {
+    position: relative;
+}
+
+.toolWrap {
+    position: absolute;
+    right:21px;
+    -webkit-transform: translateX(90%);
+    transform: translateX(90%);
+    top: 0;
+    display:none;
+}
+/*
+.toolWrap:hover .secondLevelTools {
+    display: block;
+    z-index: 10;
+    left: 3px;
+}
+
+.toolWrap:hover {
+    right: 2px;
+}
+*/
+.toolWrap .Fright {
+    float: left;
+    position: relative;
+    left: 0;
+}
+
+.secondLevelTools {
+    float: right;
+    margin-top: 2px;
+    padding: 0 15px;
+    background: #fff;
+   /* border: 1px solid #ccc;*/
+}
+
+.secondLevelTools:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    left: -5px;
+    top: 9px;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.secondLevelTools li {
+    padding-left: 22px;
+    cursor: pointer;
+}
+
+
+.createFileItem  .fa-folder-open{
+    margin-right: 3px;
+}
+.createFileItem .rubbish{
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: url("../img/delet.png") no-repeat center;
+    margin: 3px 3px 0 20px;/*xie 17/3/29*/
+}
+.createFileItem .rubbish+span{
+    float: left;
+}
+.docHead{
+    width: 100%;
+    position: relative;
+    height: 36px;
+}
+.docHead h3{
+    color: #4d4d4d;
+    float: left;
+    font-size: 14px;
+    margin: 0;
+    padding: 0 0 0 10px;
+    position: relative;
+    line-height:30px;
+    font-weight:600;
+}
+.docHead h3:before{
+    content:'';
+    position: absolute;
+    width: 3px;
+    height: 15px;
+    left: 0;
+    top: 7px;
+    background: #3b80a9;
+}
+.docHead p{
+    float: right;
+    margin-bottom: 0;
+    line-height: 36px;
+    overflow: hidden;
+}
+.docHead p a{
+    margin-left: 18px;
+    color: #b6b6b6;
+    float: left;
+}
+.docHead p a:hover{
+    color: #333;
+}
+.docHead p a input{
+    height: 28px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #b6b6b6;
+    float: left;
+    border-right: none;
+    outline: none;
+    padding:  0 5px;
+    width: 120px;
+}
+.docHead p .searcha span{
+    float: left;
+    height:28px;
+    width: 29px;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #b6b6b6;
+    text-align: center;
+    line-height: 28px;
+    font-size: 16px;
+    border-left: none;
+    position: relative;
+}
+.docHead p .searcha span i{
+    height: 22px;
+    width: 29px;
+    border-left: 1px solid #b6b6b6;
+    padding-top: 3px;
+}
+.documentManageRight .docBody .table td .fa-file-text-o{
+    font-size: 15px;
+    color: #62ccf3;
+    padding-right: 17px;
+}
+.documentManageRight .docBody .table td .docIconBox{
+    overflow: hidden;
+    clear: both;
+    display: block;
+}
+.documentManageRight .docBody .table td .docIconBox a{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 15px;
+    margin-top: 6px;
+}
+
+.outRename:hover{
+	background: url("../img/document/rename_over.png") no-repeat center;
+}
+.outRename{
+	background: url("../img/document/rename_out.png") no-repeat center;
+}
+
+.doStar{
+    background: url("../img/document/collect_after.png") no-repeat center;
+}
+
+.outStar:hover{
+	background: url("../img/document/collect_over.png") no-repeat center;
+}
+.outStar{
+	background: url("../img/document/collect_out.png") no-repeat center;
+}
+
+.outAction:hover{
+    background: url("../img/document/property_over.png") no-repeat center;
+}
+
+.outAction{
+    background: url("../img/document/property_out.png") no-repeat center;
+}
+.outComment{
+    background: url("../img/document/comment_out.png") no-repeat center;
+}
+.outComment:hover{
+    background: url("../img/document/comment_over.png") no-repeat center;
+}
+
+
+.outDownload{
+    background: url("../img/document/download_out.png") no-repeat center;
+}
+.outDownload:hover{
+    background: url("../img/document/download_over.png") no-repeat center;
+}
+.overDownload:hover{
+    background: url("../img/document/download_over.png") no-repeat center;
+}
+.outCharts{
+    background: url("../img/document/statics_out.png") no-repeat center;
+}
+.outCharts:hover{
+    background: url("../img/document/statics_over.png") no-repeat center;
+}
+.overCharts:hover{
+    background: url("../img/document/statics_over.png") no-repeat center;
+}
+.toolCreateFile{
+    background: url("../img/dfolder.png") no-repeat left center;
+}
+.toolShare{
+    background: url("../img/dshargry.png") no-repeat left center;
+}
+.toolDelete{
+    background: url("../img/ddelgry.png") no-repeat left center;
+}
+.toolAction{
+    background: url("../img/daction_05.png") no-repeat left center;
+}
+.toolEdit{
+    background: url("../img/dedit_10.png") no-repeat left center;
+}
+.toolDownload{
+    background: url("../img/ddownload_07.png") no-repeat left center;
+}
+.noMessage{
+    height: 550px;
+    position: relative;
+    display: none;
+}
+.noMessage p{
+    font-size: 16px;
+    color: #cdcdcd;
+    text-align: center;
+}
+.noMessage>div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.toolWrap .alignClass{
+		
+   
+   	/*margin-top: 3px;
+    padding-top: 3px;
+    */padding-left: 5px;/*xie 17/4/17*/
+	
+}
+.createFileItem .ztree{
+	padding:0;
+	margin-left: 30px;
+}
+.ztree li .toolWrap span{
+	line-height:15px;
+}
+.toolWrap .secondLevelTools{
+	padding:0 15px;
+}
+
+
+/*******STYLE 1*******/
+
+.chk_2 + label {
+    margin-top: 4px;
+    background-color: #fff;
+    border: 1px solid #bfbfbf;
+    margin-bottom: 0 !important;
+    border-radius: 0px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 -15px 10px -12px rgba(0, 0, 0, 0.05) inset;
+    display: inline-block;
+    margin-right: 8px;
+    padding: 6px;
+    position: relative;
+}
+
+.chk_2 + label:hover {
+    border: 1px solid #59add9;
+}
+
+.chk_2 + label:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.chk_2:checked + label {
+    background-color: #fff;
+    border: 1px solid #bfbfbf;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05)/*, inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1)*/
+    ;
+    color: #243441;
+}
+
+.chk_2:checked + label:hover {
+    border: 1px solid #59add9;
+}
+
+.chk_2:checked + label:after {
+    color: #59add9;
+    content: '\2714';
+    font-size: 0.8em;
+    left: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: -1px;
+    vertical-align: text-top;
+    width: 100%;
+}
+
+.fileLists li i:before,.firstLevel i:before{
+    display: none;
+}
+.fileLists li i{
+    margin-left: 15px;
+}
+.fileLists li i,.firstLevel i{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+/*.firstLevel i{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 15px;
+} 暂时注掉*/
+.fileLists li .fa-folder-open,.firstLevel .fa-folder-open{
+    background: url("../img/doc_img/doc6.png") no-repeat center;
+}
+.fileLists li .fa-file-text-o{
+    background: url("../img/doc_img/doc1.png") no-repeat center;
+}
+.fileLists li .fa-image{
+    background: url("../img/doc_img/doc2.png") no-repeat center;
+}
+.fileLists li .fa-music{
+    background: url("../img/doc_img/doc3.png") no-repeat center;
+}
+.fileLists li .fa-youtube-play{
+    background: url("../img/doc_img/doc4.png") no-repeat center;
+}
+.fileLists li .fa-star{
+    background: url("../img/doc_img/doc5.png") no-repeat center;
+}
+.window-document-attr .my-comment-bg .bh-information-textarea{
+    word-break: break-all;
+}
+/*17/3/29 xie 文档管理样式优化*/
+#treeDiv{
+    overflow:auto;
+    width:100%;
+    /*height:390px;*/
+    max-height: 390px;/*ztree内容自适应*/
+}
+.left_four{
+    margin-top: 10px;
+}
+.documentManageRight .mail-pagination-all.mail-pagination-bottom{
+    padding:20px 0;
+}
+
+.userListDelIcon{
+	display:inline-block;
+	width:20px;
+	height:21px;
+	background: url("../img/rabish.png") no-repeat center;
+}

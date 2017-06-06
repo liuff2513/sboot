@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--360浏览器优先以webkit内核解析-->
+    <meta name="renderer" content="webkit">
+
+    <title>设置-用户邮箱创建</title>
+
+    <link href="css/bootstrap.min.css?v=3.4.0" rel="stylesheet">
+    <link href="css/font-awesome.min.css?v=4.3.0" rel="stylesheet">
+
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min.css?v=3.0.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content">
+<div class="row">
+          <!--设置-->
+          <div class="panel">
+          <div class="panel-heading">
+            <div class="khc-tab">
+              <h1>设置</h1>
+            </div>
+          </div>
+          <div class="panel-body">
+          
+            <div class="tab-content">
+            <div class="ibox-title">
+            <h3 class="fenpei-t-h3">百会企业邮箱插件</h3>
+            </div>
+            <div class="set-content">
+            <div class="mit-ten01">
+            <div class="mit-ten02">
+            <p><span class="mit-span">邮箱类型：</span>POP3</p>
+            <p><span class="mit-span">帐号：</span><input class="mit-inp" type="text" placeholder=""></p>
+            <p><span class="mit-span">收件服务器：</span><input class="mit-inp" type="text" placeholder=""><input id="mit-one1" type="checkbox"  class="mit-inp3">使用SSL<em class="mit-em01">端口：</em><input class="mit-inp2" type="text" placeholder="465" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)" onblur="this.v();"/></p>
+            <p><span class="mit-span">发件服务器：</span><input class="mit-inp" type="text" placeholder=""><input id="mit-one1" type="checkbox" class="mit-inp3" >使用SSL<em class="mit-em01">端口：</em><input class="mit-inp2" type="text" placeholder="465" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)" onblur="this.v();"/></p>
+            <p><input id="mit-one1" type="checkbox" class="mit-inp4" >如果是服务器支持，就使用STARLLS加密传输</p>
+            </div>
+            <div class="mit-ten03">
+            <p><span class="mit-span">邮箱类型：</span><input id="mit-dan1" type="radio" name="mie-radio" value="mit-dan1" checked="">在服务器中保留邮件</p>
+            <p><span class="mit-span">邮箱类型：</span><input id="mit-dan1" type="radio" name="mie-radio" value="mit-dan1" checked="">当在这里接收邮时，将其从服务器中删除</p>
+            <p><span class="mit-span">邮箱类型：</span><input id="mit-dan1" type="radio" name="mie-radio" value="mit-dan1" checked="">当从服务器中删除邮件时，当<input class="mit-inp2" type="text" placeholder="" onkeyup="(this.v=function(){this.value=this.value.replace(/[^0-9-]+/,'');}).call(this)" onblur="this.v();"/>天后，从服务器中删除邮件</p>
+            <p><span class="mit-span">邮箱类型：</span><input id="mit-dan1" type="radio" name="mie-radio" value="mit-dan1" checked="">当在这里删除邮件时，同时将其从服务器中删除</p>
+            </div>
+            
+            
+               <div class="mit-ten04">
+               <button class="btn btn-outline btn-success" type="button">测试帐号</button>
+               <button class="btn btn-outline btn-success" type="button">保 存</button>
+              <button class="btn btn-outline btn-default" type="button">取 消</button></div>
+
+</div>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+
+
+    <!-- 全局js -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js?v=3.4.0"></script>
+     <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+
+
+</body>
+
+</html>

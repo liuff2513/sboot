@@ -1,0 +1,189 @@
+.ss{height: auto; width:100%;position: relative;    margin: 0 auto;}
+.approve-box {
+    margin: 20px auto 0px;
+    width: 30%;
+    border: 1px solid #ccc;
+    height: 590px;
+    padding: 0 10px;
+    overflow-y: auto;
+}
+.container-top{padding: 10px 15px;    min-width: 300px;}
+.container-top .approve_radio{display: inline-block}
+.container-top .approve_radio:last-child{margin-left: 20px;}
+.container-top table td{
+    font-size: 12px;
+    color: #9c9c9c;
+    width: 65px;
+}
+.container-top table td:nth-child(odd){text-align: right;padding-right: 10px}
+.container-top table tr{
+    line-height: 17px;
+    height: 37px;
+}
+.container-top table tr:last-child td:first-child{vertical-align: top}
+.sel_style {height:25px;width: 80px;}
+.container-bottom{
+    background:#fff;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    min-width: 300px;
+    border: 1px dashed #ccc;
+}
+.searchContacts-top{
+    height: 25px;
+    /*调整高度 17/3/3/ xie*/
+    text-align: center;
+    /*padding-top:3px;*/
+    border: 1px solid #ccc;
+    overflow: hidden;
+    /*17/3/3/ xie*/
+}
+.searchContacts-top input{
+    border: none;
+    background: #fff;
+    border: 1px solid #ccc;
+    height: 25px;
+    width: 100%;
+    padding-left: 5px;
+}
+.search_img{position: relative;  float: right;}
+.searchContacts-top .search_img img{
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    cursor: pointer;
+}
+.search_img.search_img_user img{
+    position: absolute;
+    top: -23px;
+    /*调整top值为23 17/3/3/ xie*/
+    left: -25px;
+    cursor: pointer;
+}
+@-moz-document url-prefix() {
+    /*兼容火狐*/
+    .searchContacts-top .search_img img{
+        position: absolute;
+        top: 0px;
+        /*top值调整 原为25 17/3/3*/
+        left: -25px;
+        cursor: pointer;
+    }
+    .search_img.search_img_user img{
+        position: absolute;
+        top: 0px;
+        /*调整top值为23 17/3/3/ xie*/
+        left: -25px;
+        cursor: pointer;
+    }
+}
+.searchContacts-A{
+    background:#f5f5f5;
+    padding-left: 5px;
+}
+
+.searchContacts-alphabet-list .text-contain-A input {margin-left: 30px;}
+
+.text-contain-A table td{width: 135px;text-align: left;padding-left: 35px}
+.text-contain-A table tr{width: 100%;line-height: 13px;}
+.rightsidebar{
+    height: 440px;
+    width: 8px;
+    display: inline-block;
+    position: absolute;
+    top: 276px;
+    right: -13px;
+    word-break: break-all;
+    font-size: 10px;
+    text-align: center;
+}
+.drop-box{
+    padding: 15px 10px 15px;
+    /*height: 58px;*/
+    background: #ebebeb;
+}
+.text-contain-A.drop-box-contain{
+    width: 200px;
+    text-align: left;
+    position: relative;
+}
+.text-contain-A.drop-box-contain td{
+    width: 100px;
+}
+.drop-box .searchContacts-top{background: #fff;}
+.drop-box .searchContacts-top input{
+    border: none;
+    height: 22px;/*调整高度 17/3/3 xie*/
+    background: #fff;
+}
+.drop-box .text-contain-A.drop-box-contain table tr td  a{
+    position: relative;
+}
+.drop-box .text-contain-A.drop-box-contain table tr td  a:hover .contacts-hover{
+    display: block;
+}
+.drop-box .text-contain-A.drop-box-contain table tr td .contacts-hover{
+    height: 25px;
+    width: 50px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 10px;
+    border-radius: 4px;
+    position: absolute;
+    top:12px;
+    left:35px;
+    display:none;}
+.searchContacts-top.searchContacts-top-org{
+    height: 56px;
+    text-align: left;
+    border-bottom: 1px dashed #ccc;
+    padding: 15px 10px 10px;
+    background: #ebebeb;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+
+}
+.text-contain-B{
+    margin-top: 12px;
+    margin-bottom: 50px;
+}
+.text-contain-B ul{
+    list-style-type: none;
+    font-size: 12px;
+}
+.container-top-rank table tr td{
+    width: 80px;
+}
+.org-sel_style{width: 200px;}
+.org-container-top table tr:nth-child(2) td{text-align: center}
+.org-container-bottom{padding-bottom: 10px;}
+.org-ul-list{padding-left: 20px}
+.org-ul-list li{height: 20px}
+.div-triangle{
+    display: inline-block;
+    width: 25px;
+    height: 30px;
+}
+.div-circle{
+    display: inline-block;
+}
+.level-sel_style{width: 180px;}
+.level-contain-top table tr td{width: 210px;}
+.level-contain-top table tr:nth-child(2) td{text-align: right}
+.level-contain-top table tr td:nth-child(odd){width: 70px}
+.level-contain-top table tr td:nth-child(even){width: 150px}
+.level-approve-box{padding: 0px}
+.text-contain-A table{width: 100%}
+.container-top.org-container-top{min-width: 300px}
+.container-top.org-container-top.level-contain-top{min-width: 300px}
+.modal-body.approve-searchztrees{padding: 10px 30px 10px}
+.contacts-hover{
+    display: inline-block;
+    float: left;}
+.userListHeight{
+    overflow: auto;
+    height: 340px;
+}

@@ -1,0 +1,398 @@
+ul,
+ol li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+select,
+textarea {
+    outline: none;
+}
+
+/*.examineTabs li {
+    float: left;
+    line-height: 38px;
+    position: relative;
+    padding: 0 12px;
+}
+
+.examineTabs li a {
+    color: #A7B1C2;
+}
+
+.examineTabs li:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 18px;
+    background: #c2c2c2;
+    right: 0;
+    top: 10px;
+}
+
+.examineTabs li:last-child:after {
+    display: none;
+}*/
+.examineTabs{
+    float: right;
+}
+.examineTabs>li.examineTabsActive>a {/*xie 17/4/20*/
+    color: #2b85c4;
+    border-bottom: 2px solid #2b85c4;
+}
+
+.examineApproveList .panel-heading {
+    /*padding: 0 15px 0;审批流调整*/
+}
+
+.examineApproveList .panel-body {
+    padding: 0;
+}
+
+.examineApproveList .sp-box-all-bg {
+    height: 92%;/*xie 17/4/20*/
+}
+
+.examineApproveList .operateTools a {
+    margin-right: 8px;
+}
+
+.approveCreateBox {
+    min-width: 700px;
+}
+
+.approveCreateBox .approveCreateItem {
+    margin-top: 35px;
+}
+
+.approveCreateBox .approveCreateItem h3 {
+    font-size: 16px;
+    font-weight: normal;
+    width: 70%;
+    margin-left: 15%;
+    height: 40px;
+    line-height: 40px;
+    background: #f5f6f8;
+    padding-left: 20px;
+    border: 1px dotted #ccc;
+    font-weight: 500;
+}
+
+.approveAuto {
+    width: 660px;
+    padding: 0;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.approveAuto li {
+    margin-bottom: 15px;
+}
+
+.approveAuto li .toFloatLeft {
+    width: 30%;
+    text-align: right;
+    float: left;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.updateRule {
+    margin-top: 10px;
+    margin-left: 124px;
+    display: none;
+    background: #fafafa;
+    border: 1px dashed #ccc;
+    padding: 10px 0 5px 10px;
+    overflow: hidden;
+    width: 430px;
+}
+
+.updateRule p {
+    margin-bottom: 5px;
+}
+
+.updateRule .ziduan-g-news-01 {
+    margin-top: 5px;
+}
+
+.approveState input[type='radio'] {
+    margin-right: 5px;
+}
+
+.approveAuto textarea {
+    width: 340px;
+}
+
+.approveAuto .approveInput {
+    width: 340px;
+    height: 28px;
+    padding: 0 5px;
+}
+
+.setApproveModule span {
+    width: 30%;
+    float: left;
+    text-align: right;
+    margin: 5px 15px 0 0;
+}
+
+.setApproveModule input {
+    height: 28px;
+    width: 230px;
+}
+
+.setApproveModule a {
+    margin: 0 8px;
+}
+
+.lockedBox>div {
+    float: left;
+}
+
+.lockedBox>div select {
+    padding: 5px;
+}
+
+.lockedCenter {
+    width: 120px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.lockedCenter button {
+    display: block;
+    margin: 30px auto;
+}
+
+.lockedCenter button:first-child {
+    margin-top: 90px;
+}
+
+.choiceModule,
+.operateType {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('../../theme/img/khc-icon/ico-select.png') no-repeat scroll right 5px center;
+}
+
+.approvalSetTbody a {
+    color: #333;
+}
+
+.addHaved {
+    display: none;
+}
+
+.modalLayer {
+    background: rgba(0, 0, 0, .7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    z-index: 999;
+}
+
+.approveModal .modal-dialog {
+    width: 60%;
+}
+
+.approveModal .works-03 {
+    margin-bottom: 0;
+    max-height: 529px;
+    overflow: auto;
+}
+
+.updateFieldsWrap {
+    width: 100%;
+    padding: 20px;
+    border: 1px dashed #ccc;
+    min-width: 400px;
+}
+
+.updateFieldTool {
+    margin: 10px 0px 0;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.updateFieldContent {
+    margin-top: 20px;
+}
+
+.updateFieldItem {
+    width: 100%;
+    height: 100%;
+}
+
+.updateFieldTool {
+    font-size: 14px;
+}
+
+.updateFieldTool span {
+    color: #797979;
+    margin-left: 20px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.updateFieldTool span:hover {
+    color: #333;
+    border-bottom: 2px solid #59add5;
+}
+
+.updateFieldTool .updateFieldToolActive {
+    color: #333;
+    border-bottom: 2px solid #59add5;
+}
+
+.updateFieldItem ul {
+    padding: 0;
+}
+
+.updateFieldItem ul li {
+    margin-bottom: 10px;
+}
+
+.updateFieldItem ul select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('../../theme/img/khc-icon/ico-select.png') no-repeat scroll right 5px center;
+    width: 120px;
+    height: 28px;
+    padding: 0 5px;
+    margin-right: 8px;
+    border:1px solid #ccc;
+}
+.updateFieldItem ul select:visited,.updateFieldItem ul select:hover,.updateFieldItem ul select:focus{
+    border:1px solid #ccc;
+}
+.updateFieldItem ul input {
+    width: 115px;
+    height: 28px;
+    margin-left: 8px;
+}
+
+.updateFieldItem ul .fa-trash-o {
+    font-size: 20px;
+    cursor: pointer;
+    color: #ccc;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+}
+
+.updateFieldTab2 {
+    display: none;
+}
+
+.newExamineApproves .Validform_wrong {
+    margin-left: 91px;
+}
+
+.newExamineApproves .Validform_right {
+    display: none;
+}
+
+.approve_style {
+    margin: 0px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+/*新增加的*/
+
+.approveModal .modal-body {
+    padding: 20px 20px 0;
+}
+
+.approveModal .modal-footer {
+    border-top: none;
+    margin:10px 0;
+}
+
+.approveModal.modal-open .modal-header {
+    background: #f3f3f3;
+}
+
+.approveModal.modal-open .modal-header .modal-title {
+    color: #fff;
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    border: 1px solid #ccc;
+}
+
+.examineApproveCreate .lockedBox {
+    background: #f9f9f9;
+    border: 1px dotted #ccc;
+}
+
+.lockedBox .lockedLeft {
+    margin: 20px 0 10px 55px;
+}
+
+.lockedBox .lockedRight {
+    margin-top: 20px;
+}
+
+.examineApproveCreate .panel-heading {
+    padding: 0;
+}
+
+.update_btns button {
+    width: 77px;
+    height: 30px;
+}
+
+.approveCreateBox .ziduan-g-news-01 .curvWhitBx {
+    width: 135px;
+    background: transparent;
+}
+
+.approveCreateBox .ziduan-g-news-01 .curvWhitBx select {
+    /*17/2/28 xie 审批流样式优化*/
+    min-width: 111px;
+    width: 111px;
+}
+
+.examineApproveList .splzs-box-02 {
+    margin: 0;
+}
+
+.addUpdate {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-top: 5px;
+    background: url("../../theme/img/guan/kh-a01.png") no-repeat center center;
+    margin: 0 8px;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+}
+.updateFieldItem.updateFieldTab1 ul li i {margin-left: 5px}
+.approve-notice{display: inline-block; vertical-align: top; width: 124px;}
+.updateFieldContent .approve-notice{
+    width: auto;
+}
+/*17/2/28 xie 审批流样式优化*/
+.updateRule small{
+    font-size: 12px;
+}
+/*17/2/28 xie 审批流样式优化*/
+.updateRule .ziduan-g-news-01 td{
+    padding-top: 12px;
+}

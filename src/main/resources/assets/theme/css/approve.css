@@ -1,0 +1,74 @@
+.approve_box{
+    /*height: 100%;*/
+    background: #fff;
+    /*padding: 13px 0px;*/
+}
+.history_box_title{margin: -10px 0px}
+.approvetitle_color,.historytitle_color{
+    font-weight: 600;
+    font-size: 14px;
+    background: #609dad;
+    width: 100%;
+    height: 40px;
+}
+.approvetitle_color h4{
+    padding-left: 34px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;}
+.historytitle_color h4{padding-left: 35px;line-height: 40px;color: #fff;font-size: 16px;}
+.alreadyagree_color{color: #1071cf;}
+.alreadynoagree_color{color:#f60730;}
+.agree_color{color: #3ebe61;}
+.font-letter{margin: 0 3px;}
+.noagree_color{color: #f60730;}
+.approvelist_box_top{height:40px; padding: 10px 15px 10px 15px;font-size:12px}
+.approvelist_box_top0{height:15px; padding: 5px 0px 5px 20px;font-size:12px}
+.approvelist_box_top span:last-child{float: right;color: #1071cf; font-size: 12px;cursor: pointer;}
+.approvelist_box_top0 span:last-child{float: right;color:#1071cf; font-size: 12px;cursor: pointer;}
+.approve_list_content{width: 100%; height: 90px;}
+.approve_list_left{float: left;width: 58px; text-align: center;  position: relative;  height: inherit;}
+.approve_list_left img{ height: 55px;  width: 55px; border: 3px solid #5d71ae;}
+.approve_list_right{font-size:12px; float: right;width: 80%;}
+.approve_list_right p{padding: 3px 0px;margin: 0}
+.approve_list_right p:first-child span {margin-right: 15px}
+.approve_list_right p:last-child span {margin-right: 10px}
+.historytitle_color{margin: 5px 0px}
+.history_box_title>div{margin: 10px 0px}
+.history_list{padding-left: 10px;font-size: 13px}
+.approvelist_box_top0 .daishenwenzi{color: #999999;}
+.datetimecolor span{color: #999999;}
+.downlinearrow{
+    height: 30px;
+    width: 29px;
+    border-right: 1px solid #ccc;
+    margin-top: -3px;}
+.down-arrow_approve{
+    position: relative;
+}
+.down-arrow_approve:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top: 10px solid #ccc;
+    right: -5px;
+    top: 0px;
+}
+.toggle-arrow_approve {
+    position: relative;
+}
+.toggle-arrow_approve:before {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-bottom: 1px solid #8b8b8b;
+    border-right: 1px solid #8b8b8b;
+    left: 120px;
+    top: 4px;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    cursor: pointer;
+}

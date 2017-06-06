@@ -1,0 +1,579 @@
+/*前台部分*/
+/*登录界面-按钮颜色*/
+.login-baihui .login-land{
+    background: #16a085!important;
+}
+.login-baihui .login-land:hover {
+    background-color: #018e75!important;
+}
+/*密码重置-按钮颜色*/
+.reset-baihui .login-land{
+    background: #16a085!important;
+}
+.reset-baihui .login-land:hover {
+    background-color:  #018e75!important;
+}
+/*logo图标背景色*/
+.profile-element {
+    background: #018e75!important;
+}
+/*logo图片底边框线*/
+.nav-header {
+    /*border-bottom: 1px solid #018d75!important;*/
+}
+/*主页全局搜索框背景色*/
+.navbar-form-custom .form-control {
+    background: #018e75!important;
+}
+/*导航右侧头部背景色*/
+.navbar-fixed-top,
+.navbar-static-top {
+    background: #16a085!important;
+}
+/*左侧菜单栏选中时左边框颜色*/
+.navbar-default .nav>li.active>a {
+    border-left: 4px solid #16a085!important;
+}
+/*用户及组织-导入用户-左边框颜色*/
+.orgReport{
+    border-left: 3px solid #3f51b5!important;
+}
+/*!*列表页头部背景色*!*/
+/*.panel-body .ibox-title {*/
+/*background-color: #16a085!important;*/
+/*}*/
+.ibox-title {
+    background-color: #16a085!important;
+}
+/*带选卡一级标题左边框颜色*/
+.khc-tab.border-b01 h1 {
+    border-left: 5px solid #16a085!important;
+}
+#commonListDiv .panel-heading .khc-tab h1, #fullsettings .panel-heading .khc-tab h1{
+    border-left: 5px solid #16a085!important;
+}
+/*列表页边框颜色*/
+/*#content-main .tab-pane .wrapper {
+    border: 1px solid #16a085!important;
+    border-top: none;
+}*/
+/*列表页表头"隐藏"文字颜色*/
+.collapse-link-one p {
+    color: #018e75!important;
+}
+/*"点击显示"颜色*/
+.pagination-bg .pagination-i div em {
+    color: #018e75!important;
+}
+/*列表表头背景色*/
+.sorting_disabled {
+    background-color: #f6fafd!important;
+}
+/*列表表头背景色*/
+table.dataTable thead .sorting {
+    background: #f6fafd!important;
+}
+/*确认，保存，搜索，添加，更新等按钮样式*/
+.btn-success,.btn-success:visited {
+    background: #16a085!important;
+    border-color: #16a085!important;
+
+}
+.btn-success:hover {
+    background: #018e75!important;
+    border-color: #018e75!important;
+
+}
+.btn-primary {
+    background: #16a085!important;
+    border-color: #16a085!important;
+    color: #fff;
+}
+.btn-primary:hover {
+    background: #018e75!important;
+    border-color: #018e75!important;
+    color: #fff;
+}
+/*新增页-title按钮*/
+a.btn-successandnew,a.btn-successandcopy{
+    background: #fff!important;
+    border-color: #16a085!important;
+    color: #16a085!important;
+}
+a.btn-successandnew:hover,a.btn-successandcopy:hover{
+    background: #018e75!important;
+    border-color: #018e75!important;
+    color: #fff!important;
+}
+/*关闭，取消，删除，返回等按钮样式*/
+.btn-default, .btn-default:visited {
+    background: #fff;!important;
+    border-color: #dbe1e8;!important;
+
+}
+.btn-default:hover {
+    background: #edf0f3;!important;
+    border-color: #edf0f3;!important;
+}
+/*邮箱-按钮颜色*/
+.btn-white {
+    font-size: 12px !important;
+    color: #fff;
+    background: #16a085!important;
+}
+.btn-white:hover {
+    font-size: 12px !important;
+    color: #fff;
+    background: #018e75!important;
+}
+/*新建报表图表，新建文件夹，新建计划表,新建仪表盘按钮样式*/
+
+.btn-default-newCreat {
+    background: #16a085!important;
+    border-color: #16a085!important;
+    color: #fff;!important;
+}
+.btn-default-newCreat:hover {
+    background: #018e75!important;
+    border-color: #018e75!important;
+    color: #fff;!important;
+}
+/*!*新增页h5标签左边框颜色*!
+.form-layout-two .ibox-title h5 {
+    border-left: 3px solid #16a085!important;
+
+}
+.shezhi-one .ibox-title .ibox-tools-k h5,.newly-two .ibox-title h5 {
+    border-left: 3px solid #16a085!important;
+
+}
+!*详情页h5标签左边框颜色*!
+.newly-thr .ibox-title h5 {
+    border-left: 3px solid #16a085!important;
+
+}
+!*消息及公告-附件-左边框颜色*!
+.newly-thr .ibox-title h5{
+    border-left: 3px solid #16a085!important;
+}*/
+/*详情页标题样式*/
+.ibox-title h5::before{
+    background: #16a085 !important;
+}
+.bh_information_top .in-active {
+    color: #fff;
+    background: #16a085 !important;
+    border-color: #16a085 !important;
+}
+/*列表页下拉选框-选中时背景颜色*/
+/*.select-ative {
+    background: #16a085!important;
+}*/
+/*用户及组织-详情页边框颜色*/
+div.content_wrap div.left {
+    height: 100%;
+    overflow: auto;
+    float: left;
+    width: 250px;
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #16a085!important;
+    border-right: none!important;
+}
+.node-new-01 {
+    float: left;
+    overflow: auto;
+    padding: 0;
+    height: 100%;
+    border: 1px solid #16a085!important;
+    width: calc(100% - 196px);
+}
+/*弹框*/
+/*主页-添加组件-弹框title颜色*/
+.modal-header {
+    background: #16a085!important;
+}
+/*批量更新-弹框title颜色*/
+.web-tboxs-a-top {
+    background-color: #16a085!important;
+
+}
+/*修改所有者-弹框title颜色*/
+.alter-head {
+    background-color: #16a085!important;
+
+}
+
+/*修改相关负责人-弹框title颜色*/
+.alter-head {
+    background-color: #16a085!important;
+
+}
+/*选择转发接收人-弹框title颜色*/
+.top-gengxin {
+
+    background-color: #16a085!important;
+
+}
+/*报表计划表-详情页title颜色*/
+.reportPlan{
+
+    background:#16a085!important;
+
+}
+/*报表计划表-详情页h3左侧边框颜色*/
+.report-form-02-head h3 {
+    border-left: 4px solid #16a085!important;
+
+}
+/*审批-弹框title颜色*/
+.list-divbox-top {
+    background-color: #16a085!important;
+
+}
+/*文档管理-弹窗title颜色*/
+.window-header {
+    width: 100%;
+    height: 50px;
+    background: #16a085!important;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.minDialogTitle{
+    background: #16a085!important;
+}
+/*合同清单 弹框title颜色*/
+.ibox-title0.lookupList-window{
+    background: #16a085!important;
+}
+/*注销公司 按钮*/
+.Company-Info-bg .Company-Info-button a {
+    background: #16a085!important;
+}
+.Company-Info-bg .Company-Info-button a:hover {
+    background: #018e75!important;
+}
+/*后台部分*/
+/*修改密码-弹框title颜色*/
+.hetong-huikuan01 .tankuang .top-gengxin {
+
+    background-color: #16a085!important;
+
+}
+/*用户-角色-详情页title颜色*/
+.newly-top {
+    background: #16a085!important;
+}
+.newly-top-new-01 {
+    background: #16a085!important;
+}
+/*弹框*/
+/*模块-新建菜单弹框title颜色*/
+.menu-set-head {
+    background-color: #16a085!important;
+}
+/*App列表页设置-右侧title颜色*/
+.phone-field-01 {
+    background: #16a085!important;
+}
+/*WEB表单title颜色*/
+.head-box {
+    background: #16a085!important;
+}
+/*WEB表单-预览-弹框title颜色*/
+.web-tboxs-a-top {
+    background-color: #16a085!important;
+}
+/*自动化规则-任务-任务负责人-弹框title颜色*/
+.alter-head {
+    background-color: #16a085!important;
+}
+/*新增地址-弹框title颜色*/
+.header-address {
+    background: #16a085!important;
+}
+/*详情页-h1左边框颜色*/
+.kh-div .ibox h1:before{
+    background: #16a085!important;
+
+}
+/*审批-文件信息弹框title颜色*/
+.windowHead {
+    height: 50px;
+    background: #16a085!important;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+/*文档管理-上传文件按钮颜色*/
+.DomLeftTop .choiceFile {
+    background: #16a085 !important;
+}
+/*文档管理-弹框title颜色*/
+.title-top{
+    background: #16a085!important;
+}
+/*附件-上传文件“选择”按钮*/
+.uploadifive-button {
+    background-color: #fff;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 4px;
+    border: 1px solid #16a085!important;
+    color: #16a085!important;
+    font: bold 12px Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.uploadifive-button:hover {
+    background-color: #16a085!important;
+    color: #FFF!important;
+}
+/*企信-发送按钮颜色*/
+.layim_sendbtn {
+    position: absolute;
+    height: 26px;
+    line-height: 26px;
+    right: 10px;
+    top: 8px;
+    padding: 0 40px 0 20px;
+    background-color: #16a085!important;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/*恢复默认-按钮颜色*/
+.gsbtn_style {
+    color: #fff;
+    float: right;
+    margin-top: 4px;
+    height: 20px;
+    line-height: 7px;
+    border-radius: 3px;
+    background-color: #16a085!important;
+    border: 1px;
+}
+/*详情页-附件-弹窗按钮颜色*/
+.window-footer button:first-child {
+    border: none;
+    background: #16a085!important;
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px 20px;
+}
+/*工作报告-title颜色*/
+.kh-div .kh-back {
+    background: #16a085!important;
+    padding: 5px 0px;
+    width: 100%;
+    height: 40px;
+    position: relative;
+    float: left;
+    display: block;
+}
+/*.form-layout-one .ibox-title h5 {
+    border-left: 3px solid #16a085!important;
+    padding-left: 3px;
+}*/
+/*关联模块-箭头颜色*/
+
+.up-arrow {
+    position: relative;
+}
+
+.up-arrow:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom: 7px solid #16a085!important;
+    right: 0px;
+    top: 0px;
+}
+
+.down-arrow {
+    -moz-position: relative;
+}
+
+.down-arrow:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-top: 7px solid #16a085!important;
+    right: 5px;
+    top: 40px;
+}
+
+.up-arrow-reportform-columns {
+    position: relative;
+}
+
+.up-arrow-reportform-columns:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom: 7px solid #16a085!important;
+    right: 0px;
+    top: 10px;
+}
+.down-arrow-reportform-columns {
+    -moz-position: relative;
+}
+
+.down-arrow-reportform-columns:after {
+    content: "";
+    position: relative;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-top: 7px solid #16a085!important;
+    right: -5px;
+    top: 40px;
+}
+.down-arrow-relationModule {
+    -moz-position: relative;
+}
+
+.down-arrow-relationModule:after {
+    content: "";
+    position: relative;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-top: 7px solid #16a085!important;
+    right: -5px;
+    top:7px;
+}
+
+.up-arrow_reportFrom {
+    position: relative;
+}
+
+.up-arrow_reportFrom:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom: 7px solid #16a085!important;
+    right: -20px;
+    top: -30px;
+}
+
+.down-arrow_reportFrom {
+    position: relative;
+}
+
+.down-arrow_reportFrom:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-top: 7px solid #16a085!important;
+    right: -20px;
+    top: 15px;
+}
+/*文档管理-h3左边框颜色*/
+.docHead h3:before{
+    content:'';
+    position: absolute;
+    width: 3px;
+    height: 15px;
+    left: 0;
+    top: 7px;
+    background: #16a085!important;
+}
+/*文档管理-弹框*/
+.table-title {
+    width: 568px;
+    margin: 28px auto 10px;
+    border-left: 2px solid #16a085!important;
+
+}
+/*详情页-委派-弹框title颜色*/
+.top_div{
+    background: #16a085!important;
+    color: #fff!important;
+}
+/*后台-logo-底边框颜色*/
+.nav-header{
+    /*border-bottom: 1px solid #16a085!important;*/
+}
+/*设置主题*/
+.skin-contain-header div h5{
+    border-left: 6px solid #16a085!important;
+}
+.skin-contain-titletop{
+    background: #16a085!important;
+}
+/*详情页title颜色*/
+.row.kh-div .kh-back.ibox-title{
+    background: #7f8c8d!important;
+}
+/*公司信息-logo背景色*/
+.company-Logobg{
+    background: #16a085!important;
+}
+/*列表页 选卡 滑过及选中*/
+/*消息及公告*/
+.bh-information-menu .in-active{
+    border-bottom-color: #16a085 !important;
+    color: #16a085 !important;
+}
+.bh-information-menu a:hover{
+    border-bottom-color: #16a085 !important;
+    color: #16a085 !important;
+}
+/*公用*/
+.nav-tabs .active a{
+    border-bottom: 2px solid #16a085 !important;
+    color: #16a085 !important;
+}
+.nav-tabs li a:hover{
+    border-bottom: 2px solid #16a085 !important;
+    color: #16a085 !important;
+}
+/*自动化*/
+.works-01 .active-works {
+    border-bottom-color: #16a085 !important;
+    color: #16a085 !important;
+}
+.works-01 a:hover {
+    border-bottom-color: #16a085 !important;
+    color: #16a085 !important;
+}
+/*审批规则*/
+.examineTabsActive a{
+    border-bottom-color: #16a085 !important;
+    color: #16a085 !important;
+}
+/*模块字段权限-title颜色*/
+.model-fieldLimit{
+    /*height: 40px;*/
+    /*width:100%;*/
+    /*background: #16a085!important;*/
+}
+/*详情页头部-折叠按钮颜色*/
+.ibox-title-bgcolor{
+    background: #6ecba7!important;
+}
+/*详情页table字体颜色*/
+a.save-class-but span{
+    color:#16a085!important;
+}
+td.simple-value a {
+    color: #16a085!important;
+}
+/*新建计划报表按钮*/
+.report-form-02-head .newPlanBtn:focus,
+.report-form-02-head .newPlanBtn:visited,
+.report-form-02-head .newPlanBtn:hover,
+.report-form-02-head .newPlanBtn:active{
+    background-color: #16a085 !important;
+}

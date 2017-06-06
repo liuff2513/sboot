@@ -43,7 +43,7 @@ public class WebMvcConfiguration extends WebMvcConfigurerAdapter {
         properties.put("time_format", "HH:mm:ss");
         properties.put("number_format", "#.##");
         properties.put("auto_import", "spring.ftl as spring");
-//        properties.put("auto_include", "");
+        properties.put("auto_include", "common/auto_include.ftl");
         properties.put("auto_flush", "true");
         freeMarkerConfigurer.setFreemarkerSettings(properties);
         return freeMarkerConfigurer;
@@ -85,6 +85,8 @@ public class WebMvcConfiguration extends WebMvcConfigurerAdapter {
 
     /**
      * 静态资源路径配置
+     * addResourceLocations 指的是文件放置的目录
+     * addResourceHandler 指的是对外暴露的访问路径
      * @param registry
      */
     @Override
@@ -98,6 +100,6 @@ public class WebMvcConfiguration extends WebMvcConfigurerAdapter {
      */
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/").setViewName("/index");
+//        registry.addViewController("/").setViewName("/index");
     }
 }

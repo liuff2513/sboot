@@ -1,0 +1,15 @@
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display:inline-block;
+}
+.sprite-arrow---prev {
+    width: 12px;
+    height: 20px;
+    background-position: -10px -10px;
+}
+.sprite-arrow-next {
+    width: 12px;
+    height: 20px;
+    background-position: -42px -10px;
+}

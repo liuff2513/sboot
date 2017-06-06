@@ -23,9 +23,9 @@ import java.io.IOException;
 @Component
 public class MyFilterSecurityInterceptor extends AbstractSecurityInterceptor implements Filter {
 
-    @Autowired
+    @Autowired(required = false)
     private MyFilterInvocationSecurityMetadataSource securityMetadataSource;
-    @Autowired
+    @Autowired(required = false)
     private MyAccessDecisionManager accessDecisionManager;
     @Autowired
     private AuthenticationManager authenticationManager;
@@ -37,20 +37,10 @@ public class MyFilterSecurityInterceptor extends AbstractSecurityInterceptor imp
     }
 
     @Override
-    public void init(FilterConfig filterConfig) throws ServletException {
-        System.out.println("filter===========================");
-    }
-
-    @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
             throws IOException, ServletException {
         FilterInvocation invocation = new FilterInvocation(request, response, chain);
         invoke(invocation);
-    }
-
-    @Override
-    public void destroy() {
-        System.out.println("filter===========================end");
     }
 
     @Override
@@ -74,5 +64,15 @@ public class MyFilterSecurityInterceptor extends AbstractSecurityInterceptor imp
         } finally {
             super.afterInvocation(token, null);
         }
+    }
+
+    @Override
+    public void init(FilterConfig filterConfig) throws ServletException {
+        System.out.println("filter===========================");
+    }
+
+    @Override
+    public void destroy() {
+        System.out.println("filter===========================end");
     }
 }

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--360浏览器优先以webkit内核解析-->
+    <meta name="renderer" content="webkit">
+
+    <title>客户池</title>
+
+    <link href="css/bootstrap.min.css?v=3.4.0" rel="stylesheet">
+    <link href="css/font-awesome.min.css?v=4.3.0" rel="stylesheet">
+
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/style.min.css?v=3.0.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content">
+<div class="row">
+          <div class="panel-heading">
+            <div class="khc-tab">
+              <h1>客户池</h1>
+              <ul class="khc-tab-menu nav nav-tabs">
+                <li class="bor-r-s active">
+                  <a data-toggle="tab" href="tabs_panels.html#tab-1" onFocus="this.blur();">公有池</a>
+                </li>
+                <li class="">
+                  <a data-toggle="tab" href="tabs_panels.html#tab-2" onFocus="this.blur();">私有池</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content-main" class="panel-body">
+          <div class="tab-content">
+              <div id="tab-1" class="tab-pane active">
+                <div class="ibox">
+                  <div class="ibox-title">
+                    <div class="khc-sel">
+                      <select>
+                        <option value="0">--所有客户--</option>
+                        <option value="1">选项1</option>
+                        <option value="2">选项2</option>
+                        <option value="3">选项3</option>
+                      </select>
+                    </div>
+                    <div class="khc-bianji">
+                      <a>编辑</a>
+                      <a>删除</a>
+                      <a>复制</a>
+                      <a>新添</a>
+                    </div>
+                    <div class="ibox-tools">
+                      <a title="添加" ><i class="khc-icon-01"></i></a>
+                      <a><i class="khc-icon-02"></i></a>
+                      <a><i class="khc-icon-03"></i></a>
+                      <a><i class="khc-icon-04"></i></a>
+                      <a><i class="khc-icon-05"></i></a>
+                      <a><i class="khc-icon-06"></i></a>
+                      <a><i class="khc-icon-07"></i></a>
+                      <a><i class="khc-icon-08"></i></a>
+                      <a><i class="khc-icon-09"></i></a>
+                      <a><i class="khc-icon-10"></i></a>
+                      <a><i class="khc-icon-11"></i></a>
+                      <a><i class="khc-icon-12"></i></a>
+                      <!--备用图标-->
+                      <!--<a class="collapse-link">
+
+
+
+                       <i class="fa fa-chevron-up"></i>
+
+
+
+                       </a>
+
+
+
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="table_basic.html#">
+
+
+
+                      <i class="fa fa-wrench"></i>
+
+
+
+                      </a>
+
+
+
+                      <a class="close-link">
+
+
+
+                                        <i class="fa fa-times"></i>
+
+
+
+                                   </a>
+
+
+
+                      -->
+                      <ul class="dropdown-menu dropdown-user">
+                        <li>
+                          <a href="table_basic.html#">选项1</a>
+                        </li>
+                        <li>
+                          <a href="table_basic.html#">选项2</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="ibox-content">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>
+                            <a>顺序 <i class="fa fa-angle-down"></i></a>
+                          </th>
+                          <th>
+                            <a>公司 <i class="fa fa-angle-down"></i></a>
+                          </th>
+                          <th>
+                            <a>联系人 <i class="fa fa-angle-down"></i> </a>
+                          </th>
+                          <th>
+                            <a>手机 <i class="fa fa-angle-down"></i></a>
+                          </th>
+                          <th>
+                            <a>固话 <i class="fa fa-angle-down"></i> </a>
+                          </th>
+                          <th>
+                            <a>邮箱 <i class="fa fa-angle-down"></i> </a>
+                          </th>
+                          <th>
+                            <a>客户状态 <i class="fa fa-angle-down"></i> </a>
+                          </th>
+                          <th>
+                            <a>创建者<i class="fa fa-angle-down"></i> </a>
+                          </th>
+                          <th>
+                            <a>修改时间 <i class="fa fa-angle-down"></i></a>
+                          </th>
+                          <th>
+                            <a>修改时间 <i class="fa fa-angle-down"></i></a>
+                          </th><th>
+                            <a>修改时间 <i class="fa fa-angle-down"></i></a>
+                          </th><th>
+                            <a>修改时间 <i class="fa fa-angle-down"></i></a>
+                          </th><th>
+                            <a>修改时间 <i class="fa fa-angle-down"></i></a>
+                          </th><th>
+                            <a>修改时间 <i class="fa fa-angle-down"></i></a>
+                          </th>
+                          <th>
+                            <a class="collapse-link-one"><i class="fa fa-search">
+
+                    <p>隐藏</p>
+
+                    </i></a>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody class="ibox-content-one">
+                        <tr>
+                          <td></td>
+                          <td>
+                            <select class="input-sm form-control input-s-sm inline">
+                              <option value="0">包含</option>
+                              <option value="1">选项1</option>
+                              <option value="2">选项2</option>
+                              <option value="3">选项3</option>
+                            </select>
+                            <input class="form-control" type="text">
+                          </td>
+                          <td>
+                            <select class="input-sm form-control input-s-sm inline">
+                              <option value="0">包含</option>
+                              <option value="1">选项1</option>
+                              <option value="2">选项2</option>
+                              <option value="3">选项3</option>
+                            </select>
+                            <input class="form-control" type="text">
+                          </td>
+                          <td>
+                            <select class="input-sm form-control input-s-sm inline">
+                              <option value="0">包含</option>
+                              <option value="1">选项1</option>
+                              <option value="2">选项2</option>
+                              <option value="3">选项3</option>
+                            </select>
+                            <input class="form-control" type="text">
+                          </td>
+                          <td>
+                            <select class="input-sm form-control input-s-sm inline">
+                              <option value="0">包含</option>
+                              <option value="1">选项1</option>
+                              <option value="2">选项2</option>
+                              <option value="3">选项3</option>
+                            </select>
+                            <input class="form-control" type="text">
+                          </td>
+                          <td>
+                            <select class="input-sm form-control input-s-sm inline">
+                              <option value="0">包含</option>
+                              <option value="1">选项1</option>
+                              <option value="2">选项2</option>
+                              <option value="3">选项3</option>
+                            </select>
+                            <input class="form-control" type="text">
+                          </td>
+                          <td>
+                            <select class="input-sm form-control input-s-sm inline">
+                              <option value="0">包含</option>
+                              <option value="1">选项1</option>
+                              <option value="2">选项2</option>
+                              <option value="3">选项3</option>
+                            </select>
+                            <input class="form-control" type="text">
+                          </td>
+                          <td>
+                            <select class="input-sm form-control input-s-sm inline">
+                              <option value="0">包含</option>
+                              <option value="1">选项1</option>
+                              <option value="2">选项2</option>
+                              <option value="3">选项3</option>
+                            </select>
+                            <input class="form-control" type="text">
+                          </td>
+                          <td>
+                            <select class="input-sm form-control input-s-sm inline">
+                              <option value="0">包含</option>
+                              <option value="1">选项1</option>
+                              <option value="2">选项2</option>
+                              <option value="3">选项3</option>
+                            </select>
+                            <input class="form-control" type="text">
+                          </td>
+                          <td><a>搜索</a></td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <input type="checkbox" value="">1</td>
+                          <td>北京宠物有限公司</td>
+                          <td>王佩芬</td>
+                          <td>13512341234
+                            <i class="fa fa-phone text-primary"></i>
+                          </td>
+                          <td>010-12345678
+                            <i class="fa fa-phone text-primary"></i>
+                          </td>
+                          <td>123456789@163.com</td>
+                          <td>已经沟通</td>
+                          <td>刘珊珊</td>
+                          <td>20150709</td>
+                          <td>23</td><td>23</td><td>23</td><td>23</td><td>23</td>
+                          <td>
+                            <a>编辑</a>
+                            <a>认领</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" value="">2</td>
+                          <td>李四</td>
+                          <td>男</td>
+                          <td>27</td>
+                          <td>张三</td>
+                          <td>男</td>
+                          <td>23</td>
+                          <td>张三</td>
+                          <td>男</td>
+                          <td>23</td>
+                          <td>23</td><td>23</td><td>23</td><td>23</td><td>23</td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <div aria-relevant="all" aria-live="polite" role="alert" id="DataTables_Table_0_info" class="dataTables_info">
+                          <select class="inline">
+                            <option value="0">10</option>
+                            <option value="1">20</option>
+                            <option value="2">30</option>
+                          </select>每页显示数量</div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div id="DataTables_Table_0_paginate" class="dataTables_paginate paging_simple_numbers">
+                          <ul class="pagination">
+                            <li class="paginate_button">
+                              <a href="#">首页</a>
+                            </li>
+                            <li class="paginate_button">
+                              <a href="#"><i class="fa fa-angle-left"></i></a>
+                            </li>
+                            <li class="paginate_button">第
+                              <em>1</em>页</li>
+                            <li class="paginate_button">
+                              <a href="#"><i class="fa fa-angle-right"></i></a>
+                            </li>
+                            <li class="paginate_button">
+                              <a href="#">末页</a>
+                            </li>
+                            <!--<li tabindex="0" aria-controls="DataTables_Table_0" class="paginate_button
+                            "><a href="#">6</a></li>
+
+                    <li id="DataTables_Table_0_next" tabindex="0" aria-controls="DataTables_Table_0" class="paginate_button next"><a href="#">下一页</a></li>-->
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="dataTables_info">
+                        第<input>页<a>跳转</a><span>共<em>2000</em>条</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="tab-2" class="tab-pane">
+                <div class="ibox">
+                  <div class="ibox-title">
+                    <div class="khc-sel">
+                      <select>
+                        <option value="0">--所有客户--</option>
+                        <option value="1">选项1</option>
+                        <option value="2">选项2</option>
+                        <option value="3">选项3</option>
+                      </select>
+                    </div>
+                    <div class="khc-bianji">
+                      <a>编辑</a>
+                      <a>删除</a>
+                      <a>复制</a>
+                      <a>新添</a>
+                    </div>
+                    <div class="ibox-tools">
+                      <a><i class="khc-icon-01"></i></a>
+                      <a><i class="khc-icon-02"></i></a>
+                      <a><i class="khc-icon-03"></i></a>
+                      <a><i class="khc-icon-04"></i></a>
+                      <a><i class="khc-icon-05"></i></a>
+                      <a><i class="khc-icon-13"></i></a>
+                      <a><i class="khc-icon-06"></i></a>
+                      <a><i class="khc-icon-07"></i></a>
+                      <a><i class="khc-icon-08"></i></a>
+                      <a><i class="khc-icon-09"></i></a>
+                      <a><i class="khc-icon-10"></i></a>
+                      <a><i class="khc-icon-11"></i></a>
+                      <a><i class="khc-icon-12"></i></a>
+                      <a><i class="khc-icon-14"></i></a>
+                      <!--备用图标-->
+                      <!--<a class="collapse-link">
+
+
+
+                       <i class="fa fa-chevron-up"></i>
+
+
+
+                       </a>
+
+
+
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="table_basic.html#">
+
+
+
+                      <i class="fa fa-wrench"></i>
+
+
+
+                      </a>
+
+
+
+                      <a class="close-link">
+
+
+
+                                        <i class="fa fa-times"></i>
+
+
+
+                                   </a>
+
+
+
+                      -->
+                      <ul class="dropdown-menu dropdown-user">
+                        <li>
+                          <a href="table_basic.html#">选项1</a>
+                        </li>
+                        <li>
+                          <a href="table_basic.html#">选项2</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="ibox-content">
+                    <table class="table table-bordered" id="DataTables_Table_0" aria-describedby="DataTables_Table_0_info">
+                      <thead>
+                        <tr>
+                          <th>
+                            <a>顺序 <i class="fa fa-angle-down"></i></a>
+                          </th>
+                          <th>
+                            <a>公司 <i class="fa fa-angle-down"></i></a>
+                          </th>
+                          <th>
+                            <a>联系人 <i class="fa fa-angle-down"></i> </a>
+                          </th>
+                          <th>
+                            <a>手机 <i class="fa fa-angle-down"></i></a>
+                          </th>
+                          <th>
+                            <a>固话 <i class="fa fa-angle-down"></i> </a>
+                          </th>
+                          <th>
+                            <a>邮箱 <i class="fa fa-angle-down"></i> </a>
+                          </th>
+                          <th>
+                            <a>客户状态 <i class="fa fa-angle-down"></i> </a>
+                          </th>
+                          <th>
+                            <a>创建者<i class="fa fa-angle-down"></i> </a>
+                          </th>
+                          <th>
+                            <a>修改时间 <i class="fa fa-angle-down"></i></a>
+                          </th>
+                          
+                          <th>
+                            <a class="collapse-link-two"><i class="fa fa-search">
+
+                    <p>隐藏</p>
+
+                    </i></a>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody class="ibox-content-two" style="display:none;">
+                        <tr>
+                          <td></td>
+                          <td>
+                            <select class="input-sm form-control input-s-sm inline">
+                              <option value="0">包含</option>
+                              <option value="1">选项1</option>
+                              <option value="2">选项2</option>
+                              <option value="3">选项3</option>
+                            </select>
+                            <input class="form-control" type="text">
+                          </td>
+                          <td>
+                            <select class="input-sm form-control input-s-sm inline">
+                              <option value="0">包含</option>
+                              <option value="1">选项1</option>
+                              <option value="2">选项2</option>
+                              <option value="3">选项3</option>
+                            </select>
+                            <input class="form-control" type="text">
+                          </td>
+                          <td>
+                            <select class="input-sm form-control input-s-sm inline">
+                              <option value="0">包含</option>
+                              <option value="1">选项1</option>
+                              <option value="2">选项2</option>
+                              <option value="3">选项3</option>
+                            </select>
+                            <input class="form-control" type="text">
+                          </td>
+                          <td>
+                            <select class="input-sm form-control input-s-sm inline">
+                              <option value="0">包含</option>
+                              <option value="1">选项1</option>
+                              <option value="2">选项2</option>
+                              <option value="3">选项3</option>
+                            </select>
+                            <input class="form-control" type="text">
+                          </td>
+                          <td>
+                            <select class="input-sm form-control input-s-sm inline">
+                              <option value="0">包含</option>
+                              <option value="1">选项1</option>
+                              <option value="2">选项2</option>
+                              <option value="3">选项3</option>
+                            </select>
+                            <input class="form-control" type="text">
+                          </td>
+                          <td>
+                            <select class="input-sm form-control input-s-sm inline">
+                              <option value="0">包含</option>
+                              <option value="1">选项1</option>
+                              <option value="2">选项2</option>
+                              <option value="3">选项3</option>
+                            </select>
+                            <input class="form-control" type="text">
+                          </td>
+                          <td>
+                            <select class="input-sm form-control input-s-sm inline">
+                              <option value="0">包含</option>
+                              <option value="1">选项1</option>
+                              <option value="2">选项2</option>
+                              <option value="3">选项3</option>
+                            </select>
+                            <input class="form-control" type="text">
+                          </td>
+                          <td>
+                            <select class="input-sm form-control input-s-sm inline">
+                              <option value="0">包含</option>
+                              <option value="1">选项1</option>
+                              <option value="2">选项2</option>
+                              <option value="3">选项3</option>
+                            </select>
+                            <input class="form-control" type="text">
+                          </td>
+                          <td><a>搜索</a></td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <input type="checkbox" value="">1</td>
+                          <td>北京宠物有限公司</td>
+                          <td>王佩芬</td>
+                          <td>13512341234
+                            <i class="fa fa-phone text-primary"></i>
+                          </td>
+                          <td>010-12345678
+                            <i class="fa fa-phone text-primary"></i>
+                          </td>
+                          <td>123456789@163.com</td>
+                          <td>已经沟通</td>
+                          <td>刘珊珊</td>
+                          <td>20150709</td>
+                          <td class="cssa">
+                            <a>编辑</a>
+                            <a>认领</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input type="checkbox" value="">2</td>
+                          <td>李四</td>
+                          <td>男</td>
+                          <td>27</td>
+                          <td>张三</td>
+                          <td>男</td>
+                          <td>23</td>
+                          <td>张三</td>
+                          <td>男</td>
+                          <td>23</td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <div aria-relevant="all" aria-live="polite" role="alert" id="DataTables_Table_0_info" class="dataTables_info">
+                          <select class="inline">
+                            <option value="0">10</option>
+                            <option value="1">20</option>
+                            <option value="2">30</option>
+                          </select>每页显示数量</div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div id="DataTables_Table_0_paginate" class="dataTables_paginate paging_simple_numbers">
+                          <ul class="pagination">
+                            <li class="paginate_button">
+                              <a href="#">首页</a>
+                            </li>
+                            <li class="paginate_button">
+                              <a href="#"><i class="fa fa-angle-left"></i></a>
+                            </li>
+                            <li class="paginate_button">第
+                              <em>1</em>页</li>
+                            <li class="paginate_button">
+                              <a href="#"><i class="fa fa-angle-right"></i></a>
+                            </li>
+                            <li class="paginate_button">
+                              <a href="#">末页</a>
+                            </li>
+                            <!--<li tabindex="0" aria-controls="DataTables_Table_0" class="paginate_button
+                            "><a href="#">6</a></li>
+
+                    <li id="DataTables_Table_0_next" tabindex="0" aria-controls="DataTables_Table_0" class="paginate_button next"><a href="#">下一页</a></li>-->
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="dataTables_info">
+                        第<input>页<a>跳转</a><span>共<em>2000</em>条</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+ </div>
+          </div>
+        </div>
+        </div>
+
+
+    <!-- 全局js -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js?v=3.4.0"></script>
+     <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+
+    <!-- 列表隐藏js -->
+<script src="js/hplus.min.js?v=2.2.0"></script>
+    <!-- 自定义js-gohome -->
+    <script src="js/content.min.js"></script>
+
+ <script>
+$(function(){
+$("#t").click(function(){
+$("#t").td-inp("<input type=\'text\' name=\'name\' class=\'inputClass\'>")
+})
+})
+</script>
+</body>
+
+</html>
