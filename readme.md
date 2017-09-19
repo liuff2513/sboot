@@ -12,7 +12,7 @@
 >Having trouble with Spring Boot, We’d like to help!
 
 - 试试怎么对的  -他们最常见的问题提供解决方案。
-- 了解春节基础-春天引导建立在许多其他的Spring项目，检查spring.io的网站进行了丰富的参考文档。如果你是刚刚开始使用Spring，请尝试的一个指南。
+- 了解Spring基础-Spring引导建立在许多其他的Spring项目，检查spring.io的网站进行了丰富的参考文档。如果你是刚刚开始使用Spring，请尝试的一个指南。
 - 问一个问题-我们监测stackoverflow.com为标记的问题spring-boot。
 - 在报告与Spring引导错误github.com/spring-projects/spring-boot/issues。
 ### 3.第一步
